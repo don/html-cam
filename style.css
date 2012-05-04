@@ -1,0 +1,29 @@
+body {
+    background-color: #d3d3d3;	    
+    font: normal 16px Helvetica, sans-serif;
+}
+
+#content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+img {
+    padding: 10px;
+    background: white;
+}
+
+.rotate {
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+form {
+    padding-top: 60px;
+}
+
+.fail {
+	background: red;
+	color: white;
+}
+
