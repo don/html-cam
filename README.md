@@ -1,4 +1,4 @@
-The browser in Android 4 is able to take pictures from a web browser and display them without any native code or server interaction.  This is a demo using Device API and File API to take and display a picture on a phone using the browser.
+The browser in Android 4 is able to take pictures from a web page and display them without any plugins or server interaction.  This demo uses the Device API and File API to take and display a picture on a phone using the browser.
 
 Watch a [video of the demo](https://vimeo.com/41577221).
 
@@ -12,7 +12,7 @@ Loading images from the gallery is finicky.  Images load from the device but fai
 
 I kludge the photo orientation based on the device orientation, clearly there is a better solution.
 
-It's possible to run the browser out of memory, possibly due to a huge photo encoded into a base64 string.  Maybe <code>window.URL.createObjectURL(file)</code> would work better than reading the image with <code>FileReader</code>?
+It's possible to run the browser out of memory.  I'm guessing this is because a huge photo is encoded into a base64 string.  Maybe <code>window.URL.createObjectURL(file)</code> would work better than reading the image with <code>FileReader</code>?
 
 Adjusting the input tag can control the input types:
 
